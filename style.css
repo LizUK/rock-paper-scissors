@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    background-color: #A07FD5;
+    padding-top: 20px;
+}
+
+h1,
+h2,
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+#title {
+    font-size: 60px;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: 0px auto;
+    border: 4px solid #4B2389;
+    padding: 10px;
+}
+
+#container,
+#winner {
+    background-image: url("images/background.jpg");
+    background-size: 100%;
+    padding: 25px;
+    background-position: center;
+}
+
+#title {
+    margin-top: 0;
+    text-align: center;
+    color: #fff;
+}
+
+
+#gameInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 50px;
+    height: 200px;
+}
+
+.gameInfo {
+    height: 10px;
+    font-size: 30px;
+    text-align: center;
+    flex: 1 1 0;
+}
+
+h2.numberOf {
+    flex: 0.10;
+    text-align: center;
+    margin-top: 0;
+    font-size: 30px;
+}
+
+.gameInfo span {
+    font-size: 60px;
+}
+
+.gameInfo p {
+    margin-top: 0;
+}
+
+.score {
+    background-image: url(images/score_back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 50%;
+    height: 200px;
+}
+
+.score span {
+    position: relative;
+    top: 29%;
+}
+
+.scoreInfo h2 {
+    flex: 0.10;
+    text-align: center;
+}
+
+#game {
+    background-image: url(images/RPS.png);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#result {
+    display:flex;
+    position: relative;
+}
+
+.pose {
+    width: 50%;
+    flex: 1;
+}
+
+.pose img {
+    max-width: 100%;
+}
+
+#winner {
+    position: absolute;
+    transform: translate(50%, -5%);
+    width: 50%;
+    text-align: center;
+    z-index: 200;
+    transition: opacity 1s ease 1s;
+}
+
+.notVisible {
+    opacity: 0;
+    transition: opacity 0s ease 0s;
+    transition: none;
+    z-index: -2000;
+    height: 0;
+}
+
+
+#winner .para1 {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+#winner .para2,
+#winner .para3 {
+    font-size: 30px;
+}
+
+#winner button {
+    background-color: #D4ADFC;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+}
+
+#buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 600px;
+    margin: 20px auto 0;
+    height: 200px;
+    text-align: center;
+}
+
+#buttons button {
+    background-color: transparent;
+    border: none;
+}
+
+.button {
+    text-align: center;
+}
+
+
+.playButton img {
+    width: 70%;
+   /* opacity: .7;
+    transition: opacity 0.5s ease-out;*/
+  }
+  
+/*.chosenWeapon {
+    opacity: 1;
+  }*/
+
+.button a {
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.button #rock,
+.button #scissors {
+    bottom: -30%;
+    z-index: 100;
+}
+
+.button #paper {
+    bottom: 10%;
+    z-index: 100;
+}
+
+#start {
+    text-align: center;
+    position: relative;
+}
+
+#playBtn {
+    background-color: #D4ADFC;
+    width: 150px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    transition: opacity 0.5s ease;
+}
+
+#choose {
+    text-align: center;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    transform: translate(50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.copy {
+    text-align: center;
+}
+
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.noClick {
+    pointer-events: none;
+    opacity: .5;
+}
+
+.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+
+    <title>Rock, Paper, Scissors.</title>
+
+	<script src="script.js" defer></script>
+
+	<link rel="stylesheet" href="style.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+	<div id="wrapper">
+
+		<div id="container">
+	
+			<h1 id="title">Rock, Paper, Scissors.</h1>
+
+			<section id="game">
+
+				<div id="gameInfo">
+
+					<div class="gameInfo">
+
+						<h2 class="numberOf">Round<br><span></span></h2>
+
+					</div>
+
+					<div class="gameInfo">
+
+						<div class="gameInfo player"><p>Your Score</p></div>
+						<div class="scoreInfo score player"><span>0</span></div>
+						
+					</div>
+
+					<div class="gameInfo">
+
+						<div class="gameInfo computer"><p>Computer's Score</p></div>
+						<div class="scoreInfo score computer"><span>0</span></div>
+						
+					</div>
+					
+				</div>
+
+				<div id="result">
+
+					<div id="winner" class="notVisible">
+
+						<p class="para1"></p>
+						<p class="para2"></p>
+						<p class="para3"></p>
+						<button>Play Again.</button>
+
+					</div>
+
+					<div class="player pose">
+
+						<img src="images/player/thumb.png">
+
+					</div>
+
+					<div class="computer pose">
+
+						<img src="images/computer/thumb.png">
+
+					</div>
+
+				</div>
+
+				<div id="buttons">
+
+					<div class="button">
+
+						<a href="javascript:;" id="rock" class="playButton rock noClick"><img src="images/rock_button.png" alt="Rock"></a>
+
+					</div>
+
+					<div class="button">
+
+						<a href="javascript:;" id="paper" class="playButton paper noClick"><img src="images/paper_button.png" alt="Paper"></a>
+						
+					</div>
+
+					<div class="button">
+
+						<a href="javascript:;" id="scissors" class="playButton scissors noClick"><img src="images/scissors_button.png" alt="Scissors"></a>
+						
+					</div>
+
+				</div>
+
+				<div id="start">
+					<button id="playBtn">Start Game!</button>
+					<p id="choose" class="fadeOut">Click a button to choose your weapon!</p>
+					
+				</div>
+			</section>
+
+		</div><!-- End Content-->
+
+	</div><!-- End Wrapper -->
+
+	<p class="copy">Copyright 2023 Elizabeth Phillips</p>
+
+  </body>
+
+
+</html>
